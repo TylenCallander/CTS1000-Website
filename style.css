@@ -1,0 +1,279 @@
+/* Apply this CSS in your style.css file */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    height: 100%;
+    box-sizing: border-box; /* Ensures padding does not add to the total width */
+}
+
+header {
+    background: #333;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #8abeb7; /* Soft green color for the header */
+    margin: 0;
+}
+
+nav a {
+    color: #81a2be; /* Blue color for command-like links */
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    color: #f0c674; /* Yellow color for hovering on links */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center;
+    margin: 20px auto; /* Adjust margins as needed */
+    padding-top: 10px;
+    background: #1e1e1e;
+    border-radius: 5px;
+    flex: 1; /* Flex grow to take available space */
+    width: calc(100% - 40px); /* Account for margin */
+}
+
+main pre {
+    white-space: pre-wrap;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto; /* Scrollbar if content is too wide */
+    font-size: 1.2em; /* Increase font size */
+}
+
+
+main code.main-code {
+    color: #b5bd68; /* Light green for main content */
+}
+
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+    background: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer pre {
+    white-space: pre-wrap;
+}
+
+footer code.footer-code {
+    color: #de935f; /* Orange color for footer text */
+}
+
+footer a {
+    color: #8abeb7; /* Soft green for links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f0c674; /* Yellow for hovering on links */
+}
+
+nav {
+    position: relative; /* This allows us to position pseudo-elements relative to the nav */
+}
+
+nav:before, nav:after {
+    content: '<nav>'; /* This will insert '<nav>' before the nav */
+    color: #c5c8c6; /* Slightly different color to distinguish it from actual links */
+    margin-right: 10px; /* Spacing between the pseudo-element and the links */
+    font-style: normal; /* Override any default styles that might make it italic */
+}
+
+nav:after {
+    content: '</nav>'; /* This will insert '</nav>' after the nav */
+    margin-left: 10px; /* Spacing between the links and the pseudo-element */
+}
+
+nav a {
+    /* Existing styles */
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+}
+
+nav a:hover {
+    transform: scale(1.1); /* Enlarges the link by 10% when hovered */
+}
+
+/* style.css content */
+html {
+    height: 100%; /* Ensure that the html element takes up at least the full height of the viewport */
+}
+
+main code.main-code {
+    color: #d4d4d4; /* Set the text color to match the terminal output */
+    font-size: 1em; /* Set the base font size */
+    line-height: 1.5; /* Increase line height for better readability */
+}
+
+/* Style for simulated tags around headings */
+main code.main-code > span.tag {
+    color: #CCCCCC; /* Color to simulate HTML tags */
+    font-weight: bold;
+}
+
+/* Style for the actual headings */
+main code.main-code > span.heading {
+    font-size: 1.2em; /* Slightly larger font size for headings */
+    color: #8abeb7; /* Color to match the header h1 */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+.tag {
+    color: #CCCCCC; /* The greyish color used elsewhere for tags */
+}
+
+/* ... other styles ... */
+
+footer pre code.footer-code .tag {
+    color: #CCCCCC; /* Ensure this is the same color used for other tags */
+}
+
+footer a:hover {
+    transform: scale(1.1); /* Enlarges the link by 10% when hovered */
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+}
+
+/* ... other footer styles ... */
+
+footer a {
+    color: #8abeb7; /* Soft green for links, or use the color you prefer */
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Add transition to email links for smooth scaling */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Apply the typing animation to your header */
+header h1 {
+    color: #8abeb7; /* Soft green color for the header */
+    margin: 0 auto; /* Center the header */
+    white-space: nowrap; /* Keeps the text in a single line */
+    overflow: hidden; /* Ensures the content is clipped */
+    box-sizing: border-box;
+    text-align: center; /* Keep the text centered */
+    max-width: fit-content; /* Limit the width to the content size */
+    display: inline-block; /* Allows for text centering */
+    position: relative; /* Needed for absolute positioning of the cursor */
+    width: 0; /* Start with a width of 0 */
+    animation: typing 4s steps(40, end) forwards; /* Animation for typing effect */
+    padding-right: 20px; /* Provides space for the cursor */
+}
+
+header h1::after {
+    content: '|';
+    position: absolute;
+    top: 50%; /* Center the cursor vertically */
+    right: 10px; /* Move cursor to the left by 5 pixels; adjust as necessary */
+    transform: translateY(-50%); /* Center the cursor vertically */
+    color: #8abeb7; /* Color of the cursor */
+    font-weight: bold;
+    animation: blink 1s step-end infinite; /* Blinking effect */
+    /* Adjust the right property as necessary */
+}
+
+main code.main-code {
+    color: #b5bd68; /* Apply the color #b5bd68 */
+    /* Other properties such as font-size, line-height etc. */
+    font-size: 1em; /* Example size, adjust as needed */
+    line-height: 1.5; /* Example line height, adjust as needed */
+}
+
+/* Add this class for the active navigation link */
+nav a.active {
+    color: #f0c674; /* Highlight color for the active page */
+    font-weight: bold; /* Optional: makes it stand out more */
+}
+
+/* Styles for the bibliography entries */
+main code.main-code ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main code.main-code ul li {
+    color: #d4d4d4; /* Adjust the color to fit the theme of the site */
+    margin-bottom: 10px;
+    line-height: 1.6; /* Adjust line height for readability */
+}
+
+/* Make sure the footer sticks to the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Fade out animation */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Class to apply the fade-out animation */
+.fade-out {
+    animation: fadeOut 1s ease forwards;
+}
+
+/* Apply the fade-in animation to the body element when the page loads */
+body {
+    animation: fadeIn 1s ease forwards;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 1.2em; /* Slightly larger font size for headings */
+    color: #8abeb7; /* Color to match the header h1 */
+}
+
+/* Existing styles for links */
+.citation-link {
+    color: #b5bd68; /* This is the green color */
+    text-decoration: none; /* Removes underline from links */
+    /* Keep your other styles for citation-link */
+}
+
+/* Add hover effect for citation links */
+.citation-link:hover {
+    color: #f0c674; /* Yellow color for hover */
+    transform: scale(1.1); /* Enlarges the link */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CTS*1000 Tylen's Final Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1>"What makes code ethical?"</h1>
+        <nav>
+            <a href="ethical.html">Ethical Concerns</a>
+            <a href="social.html">Social Concerns</a>
+            <a href="legal.html">Legal Concerns</a>
+            <a href="biblio.html">Bibliography</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Use preformatted tags to simulate terminal output -->
+        <pre><code class="main-code">
+    <span class="tag">&lt;h1&gt;</span> <span class="heading">What is this website?</span><span class="tag"> &lt;/h1&gt;</span><br>
+    This website delves into the question “What makes code mortal?”, by exploring three <br> key areas social, legal, and ethical concerns in coding.
+    
+    <span class="tag">&lt;h2&gt;</span> <span class="heading">Research Topics:</span><span class="tag"> &lt;/h2&gt;</span><br>
+    Social: The social section examines the societal impacts of coding, <br> including issues of social justice and equity.
+    Legal: The legal segment explores the regulatory frameworks and laws that <br> influence ethical coding practices.
+    Ethical: The ethical area addresses the moral principles guiding coders and <br> the philosophical aspects of coding.
+    
+    <span class="tag">&lt;h3&gt;</span> <span class="heading">What is the goal?</span><span class="tag"> &lt;/h3&gt;</span><br>
+    This website aims to enlighten and engage its audience on the ethical concerns of <br> coding, fostering responsible, socially conscious, and legally compliant practices.
+        </code></pre>
+    </main>       
+
+    <footer>
+        <pre><code class="footer-code">
+    <span class="tag">&lt;A4&gt;</span> CTS*1000 Culture and Technology Studies | Final Project<span class="tag"> &lt;/A4&gt;</span><br>
+    <span class="tag">&lt;developer&gt;</span> Made by Tylen Callander | 1290673<span class="tag"> &lt;/developer&gt;</span><br>
+    <span class="tag">&lt;email&gt;</span> <a href="mailto:callandt@uoguelph.ca">callandt@uoguelph.ca</a><span class="tag"> &lt;/email&gt;</span>
+        </code></pre>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Attach click event to all nav links
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); // Prevent the default navigation
+                    const targetUrl = this.href; // Get the URL to navigate to
+        
+                    // Add the fade-out class to the body
+                    document.body.classList.add('fade-out');
+        
+                    // Wait for the fade-out animation to complete before navigating
+                    setTimeout(() => {
+                        window.location.href = targetUrl;
+                    }, 1000); // This should match the duration of the fade-out animation
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
+
+    
