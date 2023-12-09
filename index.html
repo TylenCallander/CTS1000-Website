@@ -8,7 +8,7 @@
 <body>
     
     <header>
-        <h1>"What makes code ethical?"</h1>
+        <h1>"What makes code moral?"</h1>
         <nav>
             <a href="ethical.html">Ethical Concerns</a>
             <a href="social.html">Social Concerns</a>
@@ -18,10 +18,9 @@
     </header>
 
     <main>
-        <!-- Use preformatted tags to simulate terminal output -->
         <pre><code class="main-code">
     <span class="tag">&lt;h1&gt;</span> <span class="heading">What is this website?</span><span class="tag"> &lt;/h1&gt;</span><br>
-    This website delves into the question “What makes code mortal?”, by exploring three <br> key areas social, legal, and ethical concerns in coding.
+    This website delves into the question “What makes code moral?”, by exploring three <br> key areas social, legal, and ethical concerns in coding.
     
     <span class="tag">&lt;h2&gt;</span> <span class="heading">Research Topics:</span><span class="tag"> &lt;/h2&gt;</span><br>
     Social: The social section examines the societal impacts of coding, <br> including issues of social justice and equity.
@@ -43,19 +42,16 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
-            // Attach click event to all nav links
             document.querySelectorAll('nav a').forEach(link => {
                 link.addEventListener('click', function(e) {
-                    e.preventDefault(); // Prevent the default navigation
-                    const targetUrl = this.href; // Get the URL to navigate to
+                    e.preventDefault(); 
+                    const targetUrl = this.href; 
         
-                    // Add the fade-out class to the body
                     document.body.classList.add('fade-out');
         
-                    // Wait for the fade-out animation to complete before navigating
                     setTimeout(() => {
                         window.location.href = targetUrl;
-                    }, 1000); // This should match the duration of the fade-out animation
+                    }, 1000); 
                 });
             });
         });
@@ -63,5 +59,3 @@
     
 </body>
 </html>
-
-    
