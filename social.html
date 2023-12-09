@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CTS*1000 Tylen's Final Project - Bibliography</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>"Social Concerns"</h1>
+        <nav>
+            <a href="ethical.html">Ethical Concerns</a>
+            <a href="social.html"class="active">Social Concerns</a>
+            <a href="legal.html">Legal Concerns</a>
+            <a href="biblio.html">Bibliography</a>
+        </nav>
+   
+    </header>
+
+    <main>
+        <section class="addictive-design">
+            <h2>Privacy:</h2>
+            <p>Privacy is not just a feature implemented into applications, it is a fundamental human right, integral to maintaining personal<br> autonomy and dignity in the digital age. Privacy in software development involves the safeguarding of user data from authorized <br>access and misuse, that ensures confidentiality,and integrity. <br><br>A study interview performed in 2012 involved 12 software engineers, who were drawn from various global regions and companies, <br>but all of which had an average experience of 10 years. The programmers described during their interviews that hurdles like <br>cultural resistance and technical landscapes when enforcing privacy, with their approaches including informal advocacy and <br>managerial collaboration. This highlights the necessity for organization support in privacy integration. Furthermore, the software<br> experts all view privacy as a “broad, complex, and contextual term”, mainly associating it with data protection through encryption <br>and cryptography. Not only did the results of this research underscore the crucial role of proactive privacy measures in software<br> development, but it also suggests that privacy and security are intertwined, as the two are at odds, necessitating a balance. <br><br>
+            </p>
+        </section>
+        <section class="addictive-design">
+            <h2>Inclusivity:</h2>
+            <p>In software development, inclusivity entails coding software that is accessible to all demographics, regardless of its users race,<br> gender, sex or impairment. It should foster equal digital experiences, without discrimination, while simultaneously reflecting<br> a commitment to fairness and accessibility for all. <br><br> Research from 2022 titled, “Responsive inclusive design (RiD): a new model for inclusive software development" demonstrates<br> this necessity for inclusivity in coding to uphold morality throught the RiD model. The RiD model presents a model for<br> developing software that is inclusive for those with disabilities, which was applied to a study called EDICO. Due to the <br>implementation of the RiD, EDICO was downloaded over 7,000 times and installed in 26 faculties of the Complutense University <br>of Madrid during the time of the study. The utilization of a tool that promotes inclusivity ensured that the Spanish National <br>Organization of the Blind met software diversity needs, while RiD set a benchmark for inclusive design. The study showcased not <br>only amplified the benefits and recognition of this tool, but the data collected demonstrated the need for reinforcing such <br>inclusive practices in coding.
+            </p>
+        </section>
+        <section class="addictive-design">
+            <h2>Mental Health:</h2>
+            <p>Mental health impact is too a crucial, and increasingly pressing social concern, especially with the prevalence of social media, <br>and their capacity to influence, and addict youth. <br><br> A study conducted in 2019 explores this idea by analyzing the association between social media use and mental health issues<br> in teens in the US. The study assessed the self-reported time spent my teens on social media, and how it affected their<br> mental well-being. The results of the research concluded that teens who spent more than 3 hours on social media daily<br> indeed reported higher odds of internalizing and externalizing problems, which were amplified further if they had prior<br> history of mental health issues. While the results of this study do highlight the potential psychological risks of excessive <br>social media usage among teenagers, it can also be concluded that the need for interventions from software developers that<br>program these addictive applications should ensure their code promotes healthy user engagement, and does not exploit the<br> vulnerabilities of youth.
+
+            </p>
+        </section>
+    </main>         
+
+    <footer>
+        <pre><code class="footer-code">
+    <span class="tag">&lt;A4&gt;</span> CTS*1000 Culture and Technology Studies | Final Project<span class="tag"> &lt;/A4&gt;</span><br>
+    <span class="tag">&lt;developer&gt;</span> Made by Tylen Callander | 1290673<span class="tag"> &lt;/developer&gt;</span><br>
+    <span class="tag">&lt;email&gt;</span> <a href="mailto:callandt@uoguelph.ca">callandt@uoguelph.ca</a><span class="tag"> &lt;/email&gt;</span>
+        </code></pre>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); 
+                    const targetUrl = this.href; 
+        
+                    document.body.classList.add('fade-out');
+        
+                    setTimeout(() => {
+                        window.location.href = targetUrl;
+                    }, 1000); 
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
