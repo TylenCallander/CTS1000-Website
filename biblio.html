@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <h1>"What makes code ethical?"</h1>
+        <h1>"Bibliography"</h1>
         <nav>
             <a href="ethical.html">Ethical Concerns</a>
             <a href="social.html">Social Concerns</a>
@@ -18,12 +18,11 @@
     </header>
 
     <main>
-        <!-- Use preformatted tags to simulate terminal output -->
         <pre><code class="main-code">
     <span class="tag"><br><br><br><br><br>&lt;h1&gt;</span> <span class="heading">Bibliography</span><span class="tag"> &lt;/h1&gt;</span><br>
     <span class="tag">&lt;workscited&gt;</span> <a href="https://tinyurl.com/5apk9ztr"class="citation-link">https://tinyurl.com/5apk9ztr</a> <span class="tag">&lt;/workscited&gt;</span>
-    <span class="tag"><br>    &lt;worksconsulted&gt;</span> <a href="https://tinyurl.com/5apk9ztr"class="citation-link">https://tinyurl.com/5apk9ztr</a> <span class="tag">&lt;/worksconsulted&gt;</span>
-    <span class="tag"><br>    &lt;resources&gt;</span> <a href="https://tinyurl.com/5apk9ztr"class="citation-link">https://tinyurl.com/5apk9ztr</a> <span class="tag">&lt;/resources&gt;</span>
+    <span class="tag"><br>    &lt;worksconsulted&gt;</span> <a href="https://tinyurl.com/57r6d2ud"class="citation-link">https://tinyurl.com/57r6d2ud</a> <span class="tag">&lt;/worksconsulted&gt;</span>
+    <span class="tag"><br>    &lt;resources&gt;</span> <a href="https://tinyurl.com/ye2yzcnp"class="citation-link">https://tinyurl.com/ye2yzcnp</a> <span class="tag">&lt;/resources&gt;</span>
     </code></pre>
     </main>         
 
@@ -37,19 +36,16 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
-            // Attach click event to all nav links
             document.querySelectorAll('nav a').forEach(link => {
                 link.addEventListener('click', function(e) {
-                    e.preventDefault(); // Prevent the default navigation
-                    const targetUrl = this.href; // Get the URL to navigate to
+                    e.preventDefault(); 
+                    const targetUrl = this.href; 
         
-                    // Add the fade-out class to the body
                     document.body.classList.add('fade-out');
         
-                    // Wait for the fade-out animation to complete before navigating
                     setTimeout(() => {
                         window.location.href = targetUrl;
-                    }, 1000); // This should match the duration of the fade-out animation
+                    }, 1000); 
                 });
             });
         });
