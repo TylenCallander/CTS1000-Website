@@ -1,4 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CTS*1000 Tylen's Final Project - Bibliography</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>"Ethical Concerns"</h1>
+        <nav>
+            <a href="ethical.html"class="active">Ethical Concerns</a>
+            <a href="social.html">Social Concerns</a>
+            <a href="legal.html">Legal Concerns</a>
+            <a href="biblio.html">Bibliography</a>
+        </nav>
+   
+    </header>
 
+    <main>
+        <img src="test.gif" alt="gif" class="gif-image">
+        <img src="bias.png" alt="gif" class="img1">
+        <img src="cyber.jpg" alt="gif" class="img2">
+
+    <section class="addictive-design">
+        <h2>Addictive Design:</h2>
+        <p>Every software developer dreams of creating an application that <br>everyone adores, whether it be an app, website or extension. But<br> these software practices involve more than just appeal, but they <br>too involve incorporating unethical elements that often lead to<br> the development of addictive behaviors.<br><br>For instance, Instagram employs mechanisms like endless scrolling, <br>frequent notifications, and a personalized feed that keeps the user<br> engaged for unhealthy periods of time. These features that enhance <br>user experience also lead to compulsive usage, which often makes it <br>difficult to disengage. <br><br> Software developers should engage in decision-making where they <br>should consider the long term impacts of their designs, where a balance <br>between healthy user engagement and ethica responsibility should be<br> attained to ensure they 	doesn't exploit user vulnerabilities.
+        </p>
+    </section>
+    <section class="algorithmic-bias">
+        <h2>Algorithmic Bias:</h2>
+        <p>Algorithmic bias is another, more newly emerged concern in software<br> development, particularly with the recent emergence of machine <br>learning applications like ChatGPT and Google’s Bard. The applications<br> have been under criticism for being trained on non-diverse, discriminatory <br> and limited data sets. <br><br> In 2018, Amazon utilized an AI recruitment tool to scan resumes. The<br> system tool showed a prejudice against women, as the AI was trained on<br> resumes over a decade old which were predominantly from men, which <br>reflected the male dominance in the tech industry. <br><br> Ethical coding practices should begin with using diverse and inclusive data<br> sets, conduct regular bias checks through testing, and employ potential bias<br> detection algorithms in their code.
+        </p>
+    </section>
+    <section class="data-protection">
+        <h2>Data Protection:</h2>
+        <p>vData protection refers to a software developers responsibility of <br>safeguarding their users personal information against unauthorized<br> access, through either malware or unwarranted distribution. <br><br> MOVEit had a data breach recently this year, that affected 200 <br>organizations and 17.5m of its< users, including federal governments. <br>This breach originated from a vulnerability in the websites code,<br> which allowed hackers to not only access, but also 	distribute the<br> users of MOVEit’s personal information. <br><br> While the software developer may not be entirely at fault in these <br>situations, it is their duty to anticipate vulnerabilities in their <br>code, and implement strong security measures to protect their users <br>and their applications integrity against such breaches.
+        </p>
+    </main>         
+
+    <footer>
+        <pre><code class="footer-code">
+    <span class="tag">&lt;A4&gt;</span> CTS*1000 Culture and Technology Studies | Final Project<span class="tag"> &lt;/A4&gt;</span><br>
+    <span class="tag">&lt;developer&gt;</span> Made by Tylen Callander | 1290673<span class="tag"> &lt;/developer&gt;</span><br>
+    <span class="tag">&lt;email&gt;</span> <a href="mailto:callandt@uoguelph.ca">callandt@uoguelph.ca</a><span class="tag"> &lt;/email&gt;</span>
+        </code></pre>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); 
+                    const targetUrl = this.href; 
+        
+                    document.body.classList.add('fade-out');
+        
+                    setTimeout(() => {
+                        window.location.href = targetUrl;
+                    }, 1000); 
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
 
 
 
