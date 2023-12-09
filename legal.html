@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CTS*1000 Tylen's Final Project - Bibliography</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>"Legal Concerns"</h1>
+        <nav>
+            <a href="ethical.html">Ethical Concerns</a>
+            <a href="social.html">Social Concerns</a>
+            <a href="legal.html"class="active">Legal Concerns</a>
+            <a href="biblio.html">Bibliography</a>
+        </nav>
+   
+    </header>
+
+    <main>
+    <h4>During software development, programmers often find themselves confronted by a myriad of legal considerations, <br>
+        with each regulation holding significant implications for both users, and creators. These considerations <br>
+        must be followed to ensure the integrity, and compliance of code, that not only abides by laws and regulations, <br>
+        but is also justly moral. <br><br> Programmers should structure their code, around the following most widely known, and encountered regulations to <br>
+        ensure they program, and publish an application that utilizes legally moral code:
+    </h4>
+
+    <section class="intellectual-property">
+        <h2>Intellectual Property:</h2>
+        <p>Developers should ensure they adhere to intellectual property regulations by not using copyrighted material, including code,<br> images, audio, or software without proper authorization. They could potentially structure their code to include primarily open<br>source assets and follow GNU licensing terms for free libraries to avoid copyright infringement issues.
+        </p>
+    </section>
+    <section class="software-patents">
+        <h2>Software Patents:</h2>
+        <p>Expanding on intellectual property rights, developers can structure their code to ensure it doesnt too include potentially <br>patented software or technology without proper liscensing or permissions. To avoid this they should conduct thorough web <br>searches for patents utilizing the existing technology to identify potential conflicts prior to implementation, or development.
+        </p>
+    </section>
+    <section class="ownership">
+        <h2>Ownership:</h2>
+        <p>Software development often involves multiple programmers collaborating on one project. Developers should establish clear <br>ownership agreements amongst their development team to avoid any potential miscommunication or disagreement. Creating repositories <br>and version control systems to track ownership would too help prevent disputes.
+        </p>
+    </section>
+    <section class="trade-secrets">
+        <h2>Trade Secrets:</h2>
+        <p>Protecting trade secrets involves keeping sensitive information confidential. The privacy of a users sensitive information <br>is of the utmost importance to a software developer, so they should structure their code to limit access to this data, and <br>implement enhanced cybersecurity procedures and algorithms to prevent unauthorized disclosure through cyberattacks.
+        </p>
+    </section>
+
+    </main>         
+
+    <footer>
+        <pre><code class="footer-code">
+    <span class="tag">&lt;A4&gt;</span> CTS*1000 Culture and Technology Studies | Final Project<span class="tag"> &lt;/A4&gt;</span><br>
+    <span class="tag">&lt;developer&gt;</span> Made by Tylen Callander | 1290673<span class="tag"> &lt;/developer&gt;</span><br>
+    <span class="tag">&lt;email&gt;</span> <a href="mailto:callandt@uoguelph.ca">callandt@uoguelph.ca</a><span class="tag"> &lt;/email&gt;</span>
+        </code></pre>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); 
+                    const targetUrl = this.href; 
+        
+                    document.body.classList.add('fade-out');
+        
+                    setTimeout(() => {
+                        window.location.href = targetUrl;
+                    }, 1000); 
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
